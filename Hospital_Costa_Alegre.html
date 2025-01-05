@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Costa Alegre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .nav-link {
+            color: white !important;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hospital Costa Alegre</h1>
+        <p>Nos encontramos al lado del garaje central</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#citas">Citas Médicas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formularios">Formularios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <!-- Sección Inicio -->
+        <section id="inicio">
+            <h2 class="text-primary">Bienvenidos al Hospital Costa Alegre</h2>
+            <p>En el Hospital Costa Alegre, estamos comprometidos con tu salud. Ofrecemos servicios médicos de alta calidad en un ambiente seguro y moderno.</p>
+        </section>
+
+        <!-- Sección Citas Médicas -->
+        <section id="citas" class="mt-5">
+            <h2 class="text-primary">Citas Médicas</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo">
+                </div>
+                <div class="mb-3">
+                    <label for="servicio" class="form-label">Servicio Médico</label>
+                    <select class="form-select" id="servicio">
+                        <option selected>Selecciona un servicio</option>
+                        <option value="consulta">Consulta General</option>
+                        <option value="pediatria">Pediatría</option>
+                        <option value="cardiologia">Cardiología</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="fecha" class="form-label">Fecha y Hora</label>
+                    <input type="datetime-local" class="form-control" id="fecha">
+                </div>
+                <button type="submit" class="btn btn-primary">Solicitar Cita</button>
+            </form>
+        </section>
+
+        <!-- Sección Formularios -->
+        <section id="formularios" class="mt-5">
+            <h2 class="text-primary">Formularios</h2>
+            <ul>
+                <li><a href="#" class="text-primary">Registro de Pacientes Nuevos</a></li>
+                <li><a href="#" class="text-primary">Consulta de Resultados Médicos</a></li>
+                <li><a href="#" class="text-primary">Contacto y Sugerencias</a></li>
+            </ul>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="mt-5">
+            <h2 class="text-primary">Contacto</h2>
+            <p><strong>Dirección:</strong> Al lado del garaje central</p>
+            <p><strong>Teléfono:</strong> +52 123 456 7890</p>
+            <p><strong>Email:</strong> contacto@hospitalcostaalegre.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hospital Costa Alegre. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
